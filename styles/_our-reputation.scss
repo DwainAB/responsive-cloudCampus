@@ -1,0 +1,49 @@
+.container-our-reputation{
+    width: 100%;
+
+    .title-section-our-reputation{
+        text-align: center;
+        margin-bottom: 35px;
+        @include m-title($primary-color, "Work sans", 2rem, normal, 700);
+    }
+
+    .reputation{
+        border: 1.4px solid #E0E3EB;
+        border-radius: 5px;
+        width: 332px;
+        display: flex;
+        width: 332px;
+        padding: 20px 20px 40px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; 
+        margin: 0 auto;
+        margin-bottom: 30px;  
+
+        .title-reputation{
+            @include m-title($primary-color, "Work sans", 1.3rem, normal, 700);
+        }
+        
+        .text-reputation{
+            @include m-title($secondary-color, "Work sans", 1rem, normal, 400);
+        }
+
+    }
+}
+
+@media screen and (min-width : 900px) {
+    .list-reputation{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+        width: clamp(810px, 100%, 1250px);
+        margin: 0 auto;
+
+
+        .reputation{
+            margin: 0;
+        }
+    }
+}

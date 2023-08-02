@@ -1,0 +1,7 @@
+@mixin m-title($color, $f-family, $f-size, $f-style, $f-weight){
+    color: $color;
+    font-family: $f-family;
+    font-size: $f-size;
+    font-style: $f-style;
+    font-weight: $f-weight;
+}
