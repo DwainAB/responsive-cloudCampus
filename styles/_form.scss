@@ -1,0 +1,130 @@
+.container-section-form{
+
+    h1{
+        text-align: center;
+        @include m-title;
+        max-width: 400px;
+        min-width: 250px;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    .info-form{
+        @include m-text($primary-color, "work sans", 1.1rem, normal, 400);
+        text-align: center;
+        min-width: 290px;
+        max-width:539px;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 56px;
+    }
+
+    .container-form{
+        min-width: 300px;
+        max-width: 630px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .input, .input-message, .input::placeholder{
+        @include m-text(#A3AAC2, "work sans", 1.1rem, normal, 400);
+    }
+
+    .input{
+        padding:10px 8px 10px 8px ;
+        margin-bottom: 20px;
+        border: 1px solid #E0E3EB;
+        border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .input-message{
+        padding-bottom: 100px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .text-form{
+        width: 100%;
+        @include m-text($primary-color, "work sans", 1rem, normal, 400);
+    }
+
+    .btn-form{
+        @include m-btn($third-color, #fff, 100%, 53px, 0, center, center );
+        @include m-text(#fff, "work sans", 1.1rem, normal, 600 );
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .btn-form:hover{
+        cursor: pointer;
+    }
+
+    .stars-red{
+        color: #C40303;
+    }
+    
+    #reason-contacting{
+        appearance: none;
+        background-image: url("../Assets/ic_round-arrow-drop-down-circle.svg");
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+    }
+
+
+
+    .container-btn-file-input{
+        width: 100%!important;
+        height: 41px;
+        border: 1px solid #E0E3EB;
+        display: flex;
+        align-items: center;
+        @include m-text(#A3AAC2, "work sans", 1.1rem, normal, 400);
+        margin-bottom:20px;
+    }
+
+    #file-input {
+        display: none!important;
+    }
+
+    .btn-file-input{
+        background-color: $third-color;
+        width: 102px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+        border-radius: 4px 0px 0px 4px;
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    .btn-file-input:hover{
+        cursor: pointer;
+    }
+
+
+}
+
+@media screen and (min-width: 900px) {
+
+    .container-section-form{
+        .container-form{
+            width: 66%;
+            form{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                .input{
+                    width: 280px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

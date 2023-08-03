@@ -72,6 +72,9 @@
   width: 332px;
   margin: 0 auto;
 }
+.projects-section-right .list-projects .project:hover {
+  cursor: pointer;
+}
 .projects-section-right .list-projects .project {
   width: 332px;
   display: flex;
@@ -125,6 +128,9 @@
   font-style: normal;
   font-weight: 400;
 }
+.container-btn-see-more button:hover {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 900px) {
   .projects-section-right .list-projects {
@@ -174,6 +180,9 @@
     font-style: normal;
     font-weight: 500;
   }
+  .projects-section-left ul li:hover {
+    cursor: pointer;
+  }
   .projects-section-left ul .active {
     color: #2947A9;
     border-left: 4px solid #2947A9;
@@ -201,6 +210,9 @@
     padding-right: 10px;
     padding-left: 10px;
   }
+  .list-projects-navigation .projects-navigation-btn-left button:hover, .list-projects-navigation .projects-navigation-btn-right button:hover {
+    cursor: pointer;
+  }
   .list-projects-navigation .list-circle-nav {
     display: flex;
     flex-direction: row;
@@ -214,6 +226,145 @@
   }
   .list-projects-navigation .list-circle-nav .active {
     background-color: #2947A9;
+  }
+}
+.container-section-form h1 {
+  text-align: center;
+  color: #3D445C;
+  font-family: "work sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  max-width: 400px;
+  min-width: 250px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+.container-section-form .info-form {
+  color: #3D445C;
+  font-family: "work sans";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  min-width: 290px;
+  max-width: 539px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+.container-section-form .container-form {
+  min-width: 300px;
+  max-width: 630px;
+  width: 50%;
+  margin: 0 auto;
+}
+.container-section-form .input, .container-section-form .input-message, .container-section-form .input::placeholder {
+  color: #A3AAC2;
+  font-family: "work sans";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.container-section-form .input {
+  padding: 10px 8px 10px 8px;
+  margin-bottom: 20px;
+  border: 1px solid #E0E3EB;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container-section-form .input-message {
+  padding-bottom: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container-section-form .text-form {
+  width: 100%;
+  color: #3D445C;
+  font-family: "work sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.container-section-form .btn-form {
+  display: flex;
+  background-color: #2947A9;
+  color: #fff;
+  width: 100%;
+  height: 53px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  color: #fff;
+  font-family: "work sans";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.container-section-form .btn-form:hover {
+  cursor: pointer;
+}
+.container-section-form .stars-red {
+  color: #C40303;
+}
+.container-section-form #reason-contacting {
+  appearance: none;
+  background-image: url("../Assets/ic_round-arrow-drop-down-circle.svg");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+.container-section-form .container-btn-file-input {
+  width: 100% !important;
+  height: 41px;
+  border: 1px solid #E0E3EB;
+  display: flex;
+  align-items: center;
+  color: #A3AAC2;
+  font-family: "work sans";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.container-section-form #file-input {
+  display: none !important;
+}
+.container-section-form .btn-file-input {
+  background-color: #2947A9;
+  width: 102px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  border-radius: 4px 0px 0px 4px;
+  color: #fff;
+  margin-right: 10px;
+}
+.container-section-form .btn-file-input:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .container-section-form .container-form {
+    width: 66%;
+  }
+  .container-section-form .container-form form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-section-form .container-form form .input {
+    width: 280px;
+    margin-bottom: 20px;
   }
 }
 

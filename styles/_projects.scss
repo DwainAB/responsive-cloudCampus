@@ -15,6 +15,10 @@
         width: 332px;
         margin: 0 auto;
 
+        .project:hover{
+            cursor: pointer;
+        }
+
         .project{
             width: 332px;
             display: flex;
@@ -61,6 +65,10 @@
         gap: 10px;
         border: 0;
         @include m-text(#fff,"Work sans", 1.1rem, normal, 400);
+    }
+
+    button:hover{
+        cursor: pointer;
     }
 }
 
@@ -127,6 +135,10 @@
                 @include m-text(#C2C7D6,"Work sans", 1.5rem, normal, 500);
             }
 
+            li:hover{
+                cursor: pointer;
+            }
+
             .active{
                 color: $third-color;
                 border-left: 4px solid $third-color;
@@ -152,6 +164,10 @@
                     padding-right:10px;
                     padding-left:10px;
                 }
+            }
+
+            button:hover{
+                cursor: pointer;
             }
         }
 
