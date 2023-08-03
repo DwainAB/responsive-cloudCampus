@@ -1,7 +1,27 @@
-@mixin m-title($color, $f-family, $f-size, $f-style, $f-weight){
+@mixin m-title{
+    color: $primary-color;
+    font-family: "work sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin m-text($color, $f-family, $f-size, $f-style, $f-weight){
     color: $color;
     font-family: $f-family;
     font-size: $f-size;
     font-style: $f-style;
     font-weight: $f-weight;
+}
+
+@mixin m-btn($b-color, $t-color, $width, $height, $padding, $j-content, $a-item){
+    display: flex;
+    background-color: $b-color;
+    color: $t-color;
+    width: $width;
+    height: $height;
+    padding: $padding;
+    justify-content: $j-content;
+    align-items: $a-item;
+    border: 0;
 }

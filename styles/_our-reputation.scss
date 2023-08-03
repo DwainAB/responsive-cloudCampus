@@ -4,7 +4,7 @@
     .title-section-our-reputation{
         text-align: center;
         margin-bottom: 35px;
-        @include m-title($primary-color, "Work sans", 2rem, normal, 700);
+        @include m-title;
     }
 
     .reputation{
@@ -21,11 +21,11 @@
         margin-bottom: 30px;  
 
         .title-reputation{
-            @include m-title($primary-color, "Work sans", 1.3rem, normal, 700);
+            @include m-text($primary-color, "Work sans", 1.3rem, normal, 700);
         }
         
         .text-reputation{
-            @include m-title($secondary-color, "Work sans", 1rem, normal, 400);
+            @include m-text($secondary-color, "Work sans", 1rem, normal, 400);
         }
 
     }
