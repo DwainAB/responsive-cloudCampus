@@ -1,0 +1,160 @@
+header{
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .container-navigation{
+            display: none;
+        }
+
+        .container-logo-burger{
+            img{
+                width: 33px;
+                height: 21px;
+            }
+        }
+    }
+
+    .container-hero{
+        height: 470px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-image: url("../Assets/hero-mobile.png");
+        background-position: right -200px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h1{
+            margin-left: 30px;
+            width: 303px;
+            @include m-text($primary-color,"Work sans", 3rem, normal, 600);
+        }
+
+        .container-feature-projects{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:900px) {
+    header{
+        .container-hero{
+            background-image: url('../Assets//hero-desktop.png');
+            background-position: right center;
+        }
+    }
+}
+
+@media screen and (min-width: 1050px){
+    header{
+        nav{
+            .container-navigation{
+                display: flex;
+
+                .list-nav{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 50px;
+
+                    .link-nav{
+                        list-style: none;
+                        @include m-text(#14171F, "work sans", 1.1rem,normal, 400);
+                    }
+                    .link-nav:hover{
+                        cursor: pointer;
+                    }
+
+                    .link-active{
+                        color: #F9995D;
+                    }
+                }
+            }
+
+            .container-logo-burger{
+                display: none;
+            }
+        }
+
+        .container-hero{
+            position: relative;
+            .container-feature-projects{
+                position: absolute;
+                right: 40px;
+                bottom: 11px;
+                display: flex;
+                flex-direction: column;
+                background-color: $third-color;
+                width: 416px;
+                height: 190px;
+
+                h2{
+                    text-align: center;
+                    @include m-text(#FFF, "work sans", 1.25rem, normal, 700)
+                }
+
+                p{
+                    @include m-text(#FFF, "work sans", 1.5rem, normal, 400);
+                    text-align:center;
+                }
+
+                .container-btn-feature-project{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    height: 40px;
+
+                    .btn-feature-projects-left, .btn-feature-projects-right{
+                        width: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 40px;
+
+                        button{
+                            background-color: $primary-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            @include m-text(#FFF, "work sans", 1.1rem, normal, 400);
+                            border:0;
+                            height: 40px;
+
+                            img{
+                                padding: 10px;
+                            }
+                        }
+
+                        button:hover{
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1273px) {
+    header{
+        .container-hero{
+            height: 750px;
+
+            h1{
+                width: 556px;
+                margin-left: 308px;
+                font-size: 4.5rem;
+            }
+
+            .container-feature-projects{
+                right: 299px;
+            }
+        }
+    }
+}

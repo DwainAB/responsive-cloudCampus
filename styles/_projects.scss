@@ -6,6 +6,7 @@
     @include m-title;
     text-align: center;
     margin-bottom: 35px;
+    margin-top: 100px;
 }
 
 .projects-section-right{
@@ -73,24 +74,51 @@
 }
 
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:900px) and (max-width:1273px){
 
-    .projects-section-right{
-        .list-projects{
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 30px;
-            width: 743px;
+    .container-sections-projects{
+        .projects-section-right{
+            .list-projects{
+                flex-direction: column;
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+                box-sizing: border-box;
 
-            .project{
-                margin-bottom: 0;
+                .container-project:nth-child(2){
+                    display: flex;
+                    justify-content: end;
+                }
+                .container-project:nth-child(4){
+                    display: flex;
+                    justify-content: end;
+                }
+    
+                .project{
+                    width: 50%;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 30px;
+                    height: 400px;
+                    width: 800px;
+                    padding-right: 50px;
+
+                    img{
+                        height: 400px;
+                        width: 600px;
+                        object-fit: cover;
+                    }
+
+                }
+
             }
         }
-    }
-
-    .container-btn-see-more{
-        button{
-            margin-top: 32px;
+    
+        .container-btn-see-more{
+            button{
+                margin-top: 32px;
+            }
         }
     }
 }
@@ -98,8 +126,13 @@
 
     .projects-section-right{
         .list-projects{
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 800px;
+            gap: 30px;
             .project{
                 width: 356px;
+                margin-bottom: 0;
             }
         }
     }
@@ -155,6 +188,7 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 32px;
+        width: 742px;
 
         .projects-navigation-btn-left, .projects-navigation-btn-right{
             button{

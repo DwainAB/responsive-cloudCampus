@@ -1,5 +1,7 @@
 .container-our-reputation{
     width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 
     .title-section-our-reputation{
         text-align: center;
@@ -12,7 +14,6 @@
         border-radius: 5px;
         width: 332px;
         display: flex;
-        width: 332px;
         padding: 20px 20px 40px 20px;
         flex-direction: column;
         justify-content: center;
@@ -31,7 +32,23 @@
     }
 }
 
-@media screen and (min-width : 900px) {
+@media screen and (min-width:900px) and (max-width:1271px) {
+
+    .container-our-reputation {
+
+        .list-reputation{
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .reputation{
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1272px) {
     .list-reputation{
         display: flex;
         flex-wrap: wrap;
